@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import SnapKit
+import DynamicColor
+import Kingfisher
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    public static var SCALE_VALUE = UIScreen.main.bounds.width / 375.0
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

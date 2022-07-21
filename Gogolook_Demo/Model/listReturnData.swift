@@ -8,13 +8,13 @@
 import UIKit
 import SwiftyJSON
 
-struct animeReturnData {
+struct listReturnData {
     var pagination: paginationData = paginationData()
-    var animeListArray: [animeListData] = []
+    var listArray: [listData] = []
 
     init() {
         pagination = paginationData()
-        animeListArray = []
+        listArray = []
     }
     
     init(json: JSON) {
@@ -22,7 +22,7 @@ struct animeReturnData {
             pagination = paginationData(json: json["pagination"])
             if let array = json["data"].array {
                 for item in array {
-                    animeListArray.append(animeListData(json: item))
+                    listArray.append(listData(json: item))
                 }
             }
         }
@@ -49,14 +49,14 @@ struct paginationData {
     }
 }
 
-struct animeListData {
+struct listData {
     var mal_id: Int = 0
     var url: String = ""
     var title: String = ""
     var rank: Int = 0
     var airedFrom: String = ""
     var airedTo: String = ""
-    var images: Images = Images()
+    var image_url: String = ""
 
     init() {
         mal_id = 0
@@ -65,7 +65,17 @@ struct animeListData {
         rank = 0
         airedFrom = ""
         airedTo = ""
-        images = Images()
+        image_url = ""
+    }
+    
+    init(malId: Int, urlString: String, titleString: String, rankInt: Int, airedFromString: String, airedToString: String, imageUrlString: String) {
+        mal_id = malId
+        url = urlString
+        title = titleString
+        rank = rankInt
+        airedFrom = airedFromString
+        airedTo = airedToString
+        image_url = imageUrlString
     }
     
     init(json: JSON) {
@@ -76,21 +86,7 @@ struct animeListData {
             rank = json["rank"].int ?? 0
             airedFrom = json["aired"]["from"].string ?? ""
             airedTo = json["aired"]["to"].string ?? ""
-            images = Images(json: json["images"])
-        }
-    }
-}
-
-struct Images {
-    var image_url: String = ""
-
-    init() {
-        image_url = ""
-    }
-    
-    init(json: JSON) {
-        if json != JSON.null {
-            image_url = json["jpg"]["image_url"].string ?? ""
+            image_url = json["images"]["jpg"]["image_url"].string ?? ""
         }
     }
 }

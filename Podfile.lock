@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (5.6.1)
+  - DynamicColor (5.0.1)
+  - ESPullToRefresh (2.9.3)
+  - Kingfisher (7.2.2)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - PromiseKit (6.17.1):
+    - PromiseKit/CorePromise (= 6.17.1)
+    - PromiseKit/Foundation (= 6.17.1)
+    - PromiseKit/UIKit (= 6.17.1)
+  - PromiseKit/CorePromise (6.17.1)
+  - PromiseKit/Foundation (6.17.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.17.1):
+    - PromiseKit/CorePromise
+  - SnapKit (5.6.0)
+  - SwiftyJSON (5.0.1)
+  - XCGLogger (7.0.1):
+    - XCGLogger/Core (= 7.0.1)
+  - XCGLogger/Core (7.0.1):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - Alamofire
+  - DynamicColor
+  - ESPullToRefresh
+  - Kingfisher
+  - PromiseKit
+  - SnapKit
+  - SwiftyJSON
+  - XCGLogger
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - DynamicColor
+    - ESPullToRefresh
+    - Kingfisher
+    - ObjcExceptionBridging
+    - PromiseKit
+    - SnapKit
+    - SwiftyJSON
+    - XCGLogger
+
+SPEC CHECKSUMS:
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  DynamicColor: d049834ef86d8ecf150b0ca1ebe54ee733a0ec22
+  ESPullToRefresh: 0d68daa602b343c81753a1b95e09fd0bfcddfd40
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  PromiseKit: ee485df3d4dc570594d7e7aecae6352697dc6a4c
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  XCGLogger: 1943831ef907df55108b0b18657953f868de973b
+
+PODFILE CHECKSUM: 86d5d857989cb74ec6fba8c808d59aedbedbdc22
+
+COCOAPODS: 1.11.3
