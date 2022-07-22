@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		765876A72888EA83009AEC4C /* TimeTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765876A62888EA83009AEC4C /* TimeTools.swift */; };
 		765876AB28897695009AEC4C /* FavoriteListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765876AA28897695009AEC4C /* FavoriteListViewController.swift */; };
+		765876AD2889ADB3009AEC4C /* ListModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765876AC2889ADB3009AEC4C /* ListModelTest.swift */; };
 		766CFC912886719600E823E1 /* ItemListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CFC8F2886719600E823E1 /* ItemListTableViewCell.swift */; };
 		766CFC922886719600E823E1 /* ItemListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 766CFC902886719600E823E1 /* ItemListTableViewCell.xib */; };
 		766CFC952886CE2700E823E1 /* DemoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CFC942886CE2700E823E1 /* DemoAPI.swift */; };
@@ -16,11 +17,9 @@
 		769B45C928883B32000B19EC /* ExtensionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769B45C828883B32000B19EC /* ExtensionTool.swift */; };
 		76E494C62885203A00BC0558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494C52885203A00BC0558 /* AppDelegate.swift */; };
 		76E494C82885203A00BC0558 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494C72885203A00BC0558 /* SceneDelegate.swift */; };
-		76E494CA2885203A00BC0558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494C92885203A00BC0558 /* ViewController.swift */; };
 		76E494CD2885203A00BC0558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E494CB2885203A00BC0558 /* Main.storyboard */; };
 		76E494CF2885203C00BC0558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E494CE2885203C00BC0558 /* Assets.xcassets */; };
 		76E494D22885203C00BC0558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E494D02885203C00BC0558 /* LaunchScreen.storyboard */; };
-		76E494DD2885203C00BC0558 /* Gogolook_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494DC2885203C00BC0558 /* Gogolook_DemoTests.swift */; };
 		76E494E72885203C00BC0558 /* Gogolook_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494E62885203C00BC0558 /* Gogolook_DemoUITests.swift */; };
 		76E494E92885203C00BC0558 /* Gogolook_DemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494E82885203C00BC0558 /* Gogolook_DemoUITestsLaunchTests.swift */; };
 		76E494F62885276A00BC0558 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E494F52885276A00BC0558 /* MainListViewController.swift */; };
@@ -54,6 +53,7 @@
 		6920BEBB35B5957CA46EC2F6 /* Pods_Gogolook_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gogolook_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		765876A62888EA83009AEC4C /* TimeTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTools.swift; sourceTree = "<group>"; };
 		765876AA28897695009AEC4C /* FavoriteListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteListViewController.swift; sourceTree = "<group>"; };
+		765876AC2889ADB3009AEC4C /* ListModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModelTest.swift; sourceTree = "<group>"; };
 		766CFC8F2886719600E823E1 /* ItemListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListTableViewCell.swift; sourceTree = "<group>"; };
 		766CFC902886719600E823E1 /* ItemListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemListTableViewCell.xib; sourceTree = "<group>"; };
 		766CFC942886CE2700E823E1 /* DemoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAPI.swift; sourceTree = "<group>"; };
@@ -62,13 +62,11 @@
 		76E494C22885203A00BC0558 /* Gogolook_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gogolook_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E494C52885203A00BC0558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E494C72885203A00BC0558 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76E494C92885203A00BC0558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76E494CC2885203A00BC0558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76E494CE2885203C00BC0558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E494D12885203C00BC0558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76E494D32885203C00BC0558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E494D82885203C00BC0558 /* Gogolook_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gogolook_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E494DC2885203C00BC0558 /* Gogolook_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gogolook_DemoTests.swift; sourceTree = "<group>"; };
 		76E494E22885203C00BC0558 /* Gogolook_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Gogolook_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E494E62885203C00BC0558 /* Gogolook_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gogolook_DemoUITests.swift; sourceTree = "<group>"; };
 		76E494E82885203C00BC0558 /* Gogolook_DemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gogolook_DemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 				766CFC932886CE0F00E823E1 /* Model */,
 				76E494C52885203A00BC0558 /* AppDelegate.swift */,
 				76E494C72885203A00BC0558 /* SceneDelegate.swift */,
-				76E494C92885203A00BC0558 /* ViewController.swift */,
 				76E494F52885276A00BC0558 /* MainListViewController.swift */,
 				765876AA28897695009AEC4C /* FavoriteListViewController.swift */,
 				76E494CB2885203A00BC0558 /* Main.storyboard */,
@@ -201,7 +198,7 @@
 		76E494DB2885203C00BC0558 /* Gogolook_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				76E494DC2885203C00BC0558 /* Gogolook_DemoTests.swift */,
+				765876AC2889ADB3009AEC4C /* ListModelTest.swift */,
 			);
 			path = Gogolook_DemoTests;
 			sourceTree = "<group>";
@@ -455,7 +452,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E494CA2885203A00BC0558 /* ViewController.swift in Sources */,
 				769B45C928883B32000B19EC /* ExtensionTool.swift in Sources */,
 				76E494C62885203A00BC0558 /* AppDelegate.swift in Sources */,
 				765876A72888EA83009AEC4C /* TimeTools.swift in Sources */,
@@ -472,7 +468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E494DD2885203C00BC0558 /* Gogolook_DemoTests.swift in Sources */,
+				765876AD2889ADB3009AEC4C /* ListModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +638,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DS7WYNF42;
+				DEVELOPMENT_TEAM = 3HPU2V2RJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gogolook_Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -671,7 +667,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DS7WYNF42;
+				DEVELOPMENT_TEAM = 3HPU2V2RJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Gogolook_Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -700,7 +696,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DS7WYNF42;
+				DEVELOPMENT_TEAM = 3HPU2V2RJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -721,7 +717,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DS7WYNF42;
+				DEVELOPMENT_TEAM = 3HPU2V2RJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -741,7 +737,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DS7WYNF42;
+				DEVELOPMENT_TEAM = 3HPU2V2RJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.Gogolook-DemoUITests";
@@ -760,7 +756,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 9DS7WYNF42;
+				DEVELOPMENT_TEAM = 3HPU2V2RJ3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.demo.Gogolook-DemoUITests";

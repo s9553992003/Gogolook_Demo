@@ -1,15 +1,36 @@
 //
-//  Gogolook_DemoTests.swift
+//  ListModelTest.swift
 //  Gogolook_DemoTests
 //
-//  Created by Helios Chen on 2022/7/18.
+//  Created by Helios Chen on 2022/7/21.
 //
 
 import XCTest
 @testable import Gogolook_Demo
 
-class Gogolook_DemoTests: XCTestCase {
+class ListModelTest: XCTestCase {
 
+    var mainListViewController: MainListViewController!
+    
+    override func setUp() {
+        super.setUp()
+
+//        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        mainListViewController = MainListViewController()
+    }
+    
+    func testGetInitialAnimeCount() {
+        let animeCount = 0
+        let result = mainListViewController.getTopAnimeData()
+        XCTAssertEqual(result, animeCount, "anime count is wrong.")
+    }
+    
+    func testGetInitialMangaCount() {
+        let mangaCount = 0
+        let result = mainListViewController.getTopMangaData()
+        XCTAssertEqual(result, mangaCount, "manga count is wrong.")
+    }
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -25,12 +46,4 @@ class Gogolook_DemoTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

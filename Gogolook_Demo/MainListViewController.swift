@@ -80,6 +80,7 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
         segmentedControlSelect.setTitleTextAttributes(titleTextAttributes, for:.normal)
         segmentedControlSelect.addTarget(self, action: #selector(segmenteSelectChange), for: .valueChanged)
         segmentedControlSelect.selectedSegmentIndex = 0
+        segmentedControlSelect.accessibilityIdentifier = "segmentedControlSelect"
         self.view.addSubview(segmentedControlSelect)
         segmentedControlSelect.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(20)
@@ -402,5 +403,13 @@ class MainListViewController: UIViewController, UITableViewDataSource, UITableVi
             UserDefaults.standard.set(dictionaryFavoriteImage_url, forKey: "userFavoriteImageUrls")
             UserDefaults.standard.synchronize()
         }
+    }
+    
+    func getTopAnimeData() -> Int? {
+        return arrayAnimeData.count
+    }
+    
+    func getTopMangaData() -> Int? {
+        return arrayMangaData.count
     }
 }

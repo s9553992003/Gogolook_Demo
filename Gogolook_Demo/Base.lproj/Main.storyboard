@@ -24,22 +24,6 @@
             </objects>
             <point key="canvasLocation" x="800" y="376"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="jPe-Ys-9f9">
-            <objects>
-                <viewController id="AIn-XD-krS" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qb0-tS-GPV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6D1-vV-vdb"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="HGa-eQ-Kpb"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="im5-g0-wsv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-259" y="-505"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="7uq-Pc-2QP">
             <objects>
