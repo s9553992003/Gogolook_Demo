@@ -45,30 +45,6 @@ class FavoriteListViewController: UIViewController, UITableViewDataSource, UITab
         
         let nibItemListCell = UINib(nibName: "ItemListTableViewCell", bundle: nil)
         tableviewListShow.register(nibItemListCell, forCellReuseIdentifier: "itemListCell")
-        /*self.tableviewListShow.es.addInfiniteScrolling(animator: footer) {
-            [unowned self] in
-            if pageType == .topAnime {
-                if self.noTopAnimeData == false {
-                    self.latestPageForTopAnime += 1
-                    self.getTopAnimeData(type: selectAnimeType, filter: selectAnimeFilter, page: self.latestPageForTopAnime, handler: { () in
-                        self.tableviewListShow.es.stopLoadingMore()
-                    })
-                } else {
-                    self.tableviewListShow.es.stopLoadingMore()
-                    print("已經沒有最新資料了")
-                }
-            } else {
-                if self.noTopMangaData == false {
-                    self.latestPageForTopManga += 1
-                    self.getTopMangaData(type: selectMangaType, filter: selectMangaFilter, page: self.latestPageForTopManga, handler: { () in
-                        self.tableviewListShow.es.stopLoadingMore()
-                    })
-                } else {
-                    self.tableviewListShow.es.stopLoadingMore()
-                    print("已經沒有最新資料了")
-                }
-            }
-        }*/
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
